@@ -16,7 +16,7 @@ public final class NoTNT extends JavaPlugin implements Listener {
     }
 
     @EventHandler
-    public void onTNTExplosion (TNTPrimeEvent e){
+    public void onTNTPrime (TNTPrimeEvent e){
         if (e.getBlock().getWorld().getEnvironment().equals(World.Environment.NORMAL)){
             e.setCancelled(true);
         }
